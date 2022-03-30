@@ -11,6 +11,10 @@ public class Dice {
     int numberOfDice;
 
     int rollDice(){
-        return (int) ((Math.random()*6)+1)*numberOfDice;
+        int roll = 0;
+        for(int i=0; i<numberOfDice; i++){
+            roll += (int) ((Math.random()*6)+1);
+        }
+        return roll;
     }
 }
