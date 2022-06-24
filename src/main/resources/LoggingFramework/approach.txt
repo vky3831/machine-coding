@@ -1,0 +1,8 @@
+Components Involved:
+1) Logger
+2) Category
+3) Sink
+
+For Logger Singleton Design Pattern is used.
+For Category Chain of Responsibility Design Pattern is used.
+For Sink Observer Pattern is used.
