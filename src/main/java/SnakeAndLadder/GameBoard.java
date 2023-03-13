@@ -23,7 +23,7 @@ public class GameBoard {
             Integer steps = dice.rollDice();
             System.out.println(player.getName() + " will go " + steps + " steps ahead");
             Integer currPos = positions.getPlayerPosition(player);
-            Integer newPos = (currPos + steps) <= boardSize ? (currPos + steps) : currPos;
+            Integer newPos = currPos + steps;
             if(newPos.equals(boardSize) ) won(player);
             else if(newPos > boardSize) nextTurn.offer(player);
             else if(ladders.isLadderPresent(newPos)) actionLadder(player, newPos);

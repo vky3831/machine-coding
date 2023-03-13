@@ -8,7 +8,7 @@ import java.util.Map;
 public class PlayParkingLot {
 
     public static void main(String[] args) throws InterruptedException {
-        String nameOfParkingLot ="Pintosss Parking Lot";
+        String nameOfParkingLot ="Pintos Parking Lot";
         Address address = Address.builder().city("Bangalore").country("India").state("KA").build();
         Map<ParkingSlotType, Map<String,ParkingSlot>>  allSlots = new HashMap<>();
         Map<String,ParkingSlot> compactSlot = new HashMap<>();
